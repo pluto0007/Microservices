@@ -1,0 +1,70 @@
+[name](/reference/project-configs/name): string
+
+[config-version](/reference/project-configs/config-version): 2
+[version](/reference/project-configs/version): version
+
+[profile](/reference/project-configs/profile): profilename
+
+[model-paths](/reference/project-configs/model-paths): [directorypath]
+[seed-paths](/reference/project-configs/seed-paths): [directorypath]
+[test-paths](/reference/project-configs/test-paths): [directorypath]
+[analysis-paths](/reference/project-configs/analysis-paths): [directorypath]
+[macro-paths](/reference/project-configs/macro-paths): [directorypath]
+[snapshot-paths](/reference/project-configs/snapshot-paths): [directorypath]
+[docs-paths](/reference/project-configs/docs-paths): [directorypath]
+[asset-paths](/reference/project-configs/asset-paths): [directorypath]
+
+[packages-install-path](/reference/project-configs/packages-install-path): directorypath
+
+[clean-targets](/reference/project-configs/clean-targets): [directorypath]
+
+[query-comment](/reference/project-configs/query-comment): string
+
+[require-dbt-version](/reference/project-configs/require-dbt-version): version-range | [version-range]
+
+[flags](/reference/global-configs/project-flags):
+  [<global-configs>](/reference/global-configs/project-flags)
+
+[dbt-cloud](/docs/cloud/cloud-cli-installation):
+  [project-id](/docs/cloud/configure-cloud-cli#configure-the-dbt-cloud-cli): 70403103953626 # Required
+
+[quoting](/reference/project-configs/quoting):
+  database: true | false
+  schema: true | false
+  identifier: true | false
+
+metrics:
+  [<metric-configs>](/docs/build/metrics-overview)
+
+models:
+  [<model-configs>](/reference/model-configs)
+
+seeds:
+  [<seed-configs>](/reference/seed-configs)
+
+semantic-models:
+  [<semantic-model-configs>](/docs/build/semantic-models)
+
+saved-queries:
+  [<saved-queries-configs>](/docs/build/saved-queries)
+
+snapshots:
+  [<snapshot-configs>](/reference/snapshot-configs)
+
+sources:
+  [<source-configs>](source-configs)
+  
+tests:
+  [<test-configs>](/reference/data-test-configs)
+
+vars:
+  [<variables>](/docs/build/project-variables)
+
+[on-run-start](/reference/project-configs/on-run-start-on-run-end): sql-statement | [sql-statement]
+[on-run-end](/reference/project-configs/on-run-start-on-run-end): sql-statement | [sql-statement]
+
+[dispatch](/reference/project-configs/dispatch-config):
+  - macro_namespace: packagename
+    search_order: [packagename]
+
+[restrict-access](/docs/collaborate/govern/model-access): true | false
